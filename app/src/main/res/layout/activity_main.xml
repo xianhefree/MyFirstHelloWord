@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+<FrameLayout
+    android:id="@+id/fl_main_show"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_main_rg"
+        android:background="#44777070"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_main_zhuangxu"
+            android:text="@string/rg_zhuangxiu"
+            android:textSize="20dp"
+            android:drawableTop="@drawable/btn_zhuangxiu_selector"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:checked="false" />
+        <RadioButton
+            android:layout_weight="1"
+            android:width="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_main_community"
+            android:drawableTop="@drawable/rbtn_community_selector"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:text="社区论坛"
+            android:button="@null"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rb_main_me"
+            android:text="我的账户"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/rbtn_me_selector"
+            android:button="@null"/>
+
+    </RadioGroup>
+
+</LinearLayout>
